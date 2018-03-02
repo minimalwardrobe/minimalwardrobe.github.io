@@ -17,6 +17,7 @@ function blurNonSelectedCards(card) {
 function closeCard() {
   $('.close-card').click(function() {
     var selectedCard = $('.selected-card')
+    $('.selected-card').find('.close-card').css('display', 'none')
     selectedCard.css('animation', 'resetCard 1s linear 0s')
     selectedCard.css('animation-fill-mode', 'forwards')
     removeFullText(selectedCard)
@@ -64,9 +65,11 @@ function fadeOutText() {
 
   $(".sidebar-box").click(function() {
     var card = $(this).closest('.product-card')
+    setTimeout(function() {
+      card.find('.close-card').css('display', 'initial')
+    }, 1000)
     card.addClass('selected-card')
     card.removeClass('not-selected')
-    console.log(card);
     showFullText(card)
     blurNonSelectedCards()
     enlargeCardOnFadedTextClick(card)
