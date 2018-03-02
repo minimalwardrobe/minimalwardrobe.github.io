@@ -15,7 +15,11 @@ html,body, .header-video {
   display: none;
   position: relative;
   left: 20px;
-  top: -4%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #1E91D6;
+  top: -1%;
   z-index: 999;
 }
 
@@ -119,10 +123,12 @@ p {
   display: flex;
   justify-content: space-around;
   margin-top: -5px;
-  margin-bottom: 5px;
+  padding-bottom: 20%;
   margin: 0 auto;
   height: 100%;
-  width: 95%;
+  width: 90%;
+  flex-wrap: wrap;
+
 }
 
 .product-card {
@@ -130,6 +136,7 @@ p {
   height: 450px;
   width: 300px;
   top: 50px;
+  margin-bottom: 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
