@@ -11,6 +11,12 @@ html,body, .header-video {
   filter: brightness(70%);
 }
 
+.close-card {
+  position: relative;
+  left: 20px;
+  top: 1%;
+}
+
 .fadeout {
     position: relative;
     bottom: 5em;
@@ -127,6 +133,16 @@ p {
   border-left: 4px solid #134074;
 }
 
+@keyframes blurNotSelected {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(75px);
+  }
+}
+
+
 @keyframes easeOutBlur {
   0% {
     filter: blur(75px);
@@ -154,6 +170,11 @@ p {
   }
 }
 
+@keyframes typing {
+    from { width: 100% }
+    to { width: 0 }
+}
+
 .card-image {
   position: relative;
   margin: 0 auto;
@@ -168,11 +189,6 @@ p {
   height: 100%;
   object-fit: cover;
   object-position: 50% 3%;
-}
-
-@keyframes typing {
-    from { width: 100% }
-    to { width: 0 }
 }
 
 .intro-text-container {
