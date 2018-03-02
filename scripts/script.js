@@ -3,7 +3,7 @@ $(document).ready(function() {
   fadeOutText()
   // resetCards()
   closeCard()
-  typeWriter("Simplify your life with functional, affordable clothing that doesn't go out of style.", 0)
+  typeWriter("Functional, affordable clothing that doesn't go out of style.", 0)
 })
 
 function blurNonSelectedCards(card) {
@@ -16,12 +16,17 @@ function blurNonSelectedCards(card) {
 
 function closeCard() {
   $('.close-card').click(function() {
-    $('.selected-card').css('animation', 'resetCard 1s linear 0s')
-    $('.selected-card').css('animation-fill-mode', 'forwards')
+    var selectedCard = $('.selected-card')
+    selectedCard.css('animation', 'resetCard 1s linear 0s')
+    selectedCard.css('animation-fill-mode', 'forwards')
+    removeFullText(selectedCard)
     $('.not-selected').each(function() {
-      $(this).css('animation', 'easeOutBlur 1s linear 0s')
-      $(this).css('animation-fill-mode', 'forwards')
-      $(this).css('pointer-events', 'auto')
+      var notSelectedCards = $(this)
+      notSelectedCards.css('animation', 'easeOutBlur 1s linear 0s')
+      notSelectedCards.css('animation-fill-mode', 'forwards')
+      notSelectedCards.css('pointer-events', 'auto')
+      notSelectedCards.find('.read-more').css('display', 'block')
+
       $('.selected-card').addClass('not-selected')
       $('.selected-card').removeClass('selected-card')
   })
@@ -32,9 +37,16 @@ function enlargeCardOnFadedTextClick(card) {
   card.css('animation-fill-mode', 'forwards')
 }
 
-function toggleFullText(card) {
+function showFullText(card) {
   card.find('.full-description').css('display', 'flex')
   card.find('.partial-description').css('display', 'none')
+  card.find('.read-more').css('display', 'none')
+}
+
+function removeFullText(card) {
+  card.find('.full-description').css('display', 'none')
+  card.find('.partial-description').css('display', 'flex')
+  card.find('.read-more').css('display', 'flex')
 }
 
 function typeWriter(text, n) {
@@ -54,7 +66,8 @@ function fadeOutText() {
     var card = $(this).closest('.product-card')
     card.addClass('selected-card')
     card.removeClass('not-selected')
-    toggleFullText(card)
+    console.log(card);
+    showFullText(card)
     blurNonSelectedCards()
     enlargeCardOnFadedTextClick(card)
 
@@ -65,17 +78,17 @@ function fadeOutText() {
     $ps = $up.find("p:not('.read-more')");
 
     // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
-    $ps.each(function() {
-      totalHeight += $('p.item-description').outerHeight();
-    });
-
-    $up.css({
-        // Set height to prevent instant jumpdown when max height is removed
-        "height": $up.height(),
-        "max-height": 9999
-      }).animate({
-        "height": totalHeight
-      });
+    // $ps.each(function() {
+    //   totalHeight += $('p.item-description').outerHeight();
+    // });
+    //
+    // $up.css({
+    //     Set height to prevent instant jumpdown when max height is removed
+    //     "height": $up.height(),
+    //     "max-height": 9999
+    //   }).animate({
+    //     "height": totalHeight
+    //   });
 
     // fade out read-more
     $p.fadeOut();
