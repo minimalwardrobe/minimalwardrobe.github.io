@@ -1,9 +1,7 @@
 $(document).ready(function() {
-  // enlargeCard()
   fadeOutText()
-  // resetCards()
   closeCard()
-  typeWriter("Functional, affordable clothing that doesn't go out of style.", 0)
+  typeWriter("Simplify things with functional, affordable clothing that doesn't go out of style.", 0)
 })
 
 function blurNonSelectedCards(card) {
