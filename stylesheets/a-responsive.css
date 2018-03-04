@@ -56,7 +56,8 @@
 
   .intro-text {
     left: 40px;
-    top: 210px;
+    top: 110px;
+    line-height: 1.5;
   }
 
   .light-green-container {
@@ -120,9 +121,10 @@
 /*IPHONE 5*/
 @media only screen and (max-width: 320px) {
   .intro-text {
-    top: 130px;
+    top: 110px;
     font-size: 35px;
     left: 25px;
+    line-height: 1.5;
   }
 
   .minimalist-wardrobe-header {
