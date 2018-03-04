@@ -1,8 +1,32 @@
 $(document).ready(function() {
   fadeOutText()
   closeCard()
-  typeWriter("Simplify things with functional, affordable clothing that doesn't go out of style.", 0)
+  catalogHeaderSelect()
+  checkForCatalogString()
+  typeWriter("Simplify your wardrobe with functional, affordable clothing that doesn't go out of style.", 0)
 })
+
+function checkForCatalogString() {
+  // if (window.location.href == "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/index.html#catalog") {
+  //   // console.log('hey');
+  //   $('html, body').animate({
+  //     scrollTop: $('.more-life-container').offset().top
+  //   }, 'slow');
+  // }
+}
+
+function catalogHeaderSelect() {
+  $('.catalog-header').click(function() {
+    if (window.location.href == "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/index.html" || window.location.href == "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/index.html#catalog") {
+      console.log('hey');
+      $('html, body').animate({
+        scrollTop: $('.more-life-container').offset().top
+      }, 'slow');
+    } else if (window.location.href == "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/about.html") {
+      window.location.href = "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/index.html#catalog"
+    }
+  })
+}
 
 function blurNonSelectedCards(card) {
   $('.not-selected').each(function() {

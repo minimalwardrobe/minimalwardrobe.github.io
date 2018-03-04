@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/all-styles.css">
+    <link rel="stylesheet" href="stylesheets/a-responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -15,9 +17,9 @@
         <img src="images/mw-logo-black.png" class="mw-logo">
       </a>
       <div class="minimalist-wardrobe-header">
-        <a href="about.html" class="left">About</a>
-        <a href="#" class="right">Catalog</a>
-        <a href="#" class="right">Contact</a>
+        <a href="about.html">About</a>
+        <a class="catalog-header">Catalog</a>
+        <a href="mailto:theminimalwardrobee@gmail.com?subject=feedback" target="_blank">Contact</a>
       </div>
     </div>
     <div class="intro-text-container">
@@ -27,7 +29,8 @@
       <video class="" src="videos/people-walking.mp4" autoplay="true" muted="true" loop="true">
       </video>
     </div>
-    <div class="more-life-container">
+    <div class="more-life-container" id="catalog">
+      <h3>The Minimal Catalog</h3>
       <div class="more-life">
         <div class="product-card not-selected">
           <div class="close-card">X</div>
