@@ -1,15 +1,23 @@
 $(document).ready(function() {
+  onlyAnimateOnWeb()
   fadeOutText()
   closeCard()
+  
+
   catalogHeaderSelect()
   typeWriter("Simplify your wardrobe with functional clothing that hopefully won't go out of style.", 0)
 })
+
+function onlyAnimateOnWeb() {
+  // if the screen width is greater than 767
+  // initiate animation
+  // if it is not, change css so all card content is showing on
+}
 
 
 function catalogHeaderSelect() {
   $('.catalog-header').click(function() {
     if (window.location.href == "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/index.html" || window.location.href == "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/index.html#catalog") {
-      console.log('hey');
       $('html, body').animate({
         scrollTop: $('.more-life-container').offset().top
       }, 'slow');
