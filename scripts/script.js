@@ -1,17 +1,22 @@
 $(document).ready(function() {
   onlyAnimateOnWeb()
-  fadeOutText()
-  closeCard()
-
 
   catalogHeaderSelect()
   typeWriter("Simplify your wardrobe with functional clothing that hopefully won't go out of style.", 0)
 })
 
 function onlyAnimateOnWeb() {
-  // if the screen width is greater than 767
-  // initiate animation
-  // if it is not, change css so all card content is showing on
+  if ($(window).width() > 767) {
+    fadeOutText()
+    closeCard()
+  } else {
+    $('.product-card').each(function() {
+      $(this).find('.full-description').css('display', 'flex')
+      $(this).find('.partial-description').css('display', 'none')
+      $(this).find('.read-more').css('display', 'none')
+      $(this).find('.sidebar-box').css('max-height', '150px')
+    })
+  }
 }
 
 

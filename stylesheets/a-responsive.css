@@ -78,6 +78,14 @@
   .dark-green-container h5 {
     font-size: 21px;
   }
+
+  .product-card.small-text {
+    height: 450px;
+  }
+
+  .product-card.large-text {
+    height: 550px;
+  }
 }
 
 /*IPHONE 6*/
