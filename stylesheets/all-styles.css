@@ -141,6 +141,7 @@ p {
   padding-bottom: 5%;
   margin: 0 auto;
   height: 210%;
+  z-index: 1;
   width: 90%;
   flex-wrap: wrap;
 }
@@ -151,6 +152,7 @@ p {
   margin-top: -35px;
   background-color: #CDD6DD;
   /* background-color: #06d6a0; */
+  z-index: 0;
 }
 
 .more-life-container h3 {
