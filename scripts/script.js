@@ -3,7 +3,7 @@ $(document).ready(function() {
   closeCard()
   catalogHeaderSelect()
   checkForCatalogString()
-  typeWriter("Simplify your wardrobe with functional, affordable clothing that doesn't go out of style.", 0)
+  typeWriter("Simplify your wardrobe with functional, affordable clothing that won't go out of style.", 0)
 })
 
 function checkForCatalogString() {
