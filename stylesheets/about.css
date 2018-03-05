@@ -1,6 +1,6 @@
 .dark-green-container {
     width: 800px;
-    height: 780px;
+    height: 645px;
     background-color: #134074;
     position: absolute;
     left: 200px;
@@ -41,14 +41,14 @@
 }
 
 .light-green-container {
-    width: 700px;
-    height: 700px;
-    background-color: #CDD6DD;
-    position: absolute;
-    left: 350px;
-    top: 120px;
-    z-index: 997;
-    overflow: scroll;
+  width: 700px;
+  height: 610px;
+  background-color: #CDD6DD;
+  position: absolute;
+  left: 350px;
+  top: 120px;
+  z-index: 997;
+  overflow: scroll;
 }
 
 .about-container-new {

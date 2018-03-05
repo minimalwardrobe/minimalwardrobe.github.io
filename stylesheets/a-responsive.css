@@ -64,14 +64,14 @@
   .light-green-container {
     width: 300px;
     left: 65px;
-    height: 850px;
+    height: 805px;
     top: 70px;
   }
 
   .dark-green-container {
     width: 300px;
     left: 45px;
-    height: 1075px;
+    height: 835px;
     top: 100px;
   }
 
@@ -102,12 +102,12 @@
 
   .light-green-container {
     left: 45px;
-    height: 1000px;
+    height: 800px;
   }
 
   .dark-green-container {
     left: 25px;
-    height: 1050px;
+    height: 830px;
   }
 
   .minimalist-wardrobe-header {
@@ -125,14 +125,14 @@
   .light-green-container {
     width: 300px;
     left: 45px;
-    height: 1000px;
+    height: 800px;
     top: 70px;
   }
 
   .dark-green-container {
     width: 300px;
     left: 25px;
-    height: 1050px;
+    height: 830px;
     top: 100px;
   }
 }
