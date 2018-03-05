@@ -171,6 +171,7 @@ p {
   width: 330px;
   top: 50px;
   margin-bottom: 4%;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   justify-content: center;
