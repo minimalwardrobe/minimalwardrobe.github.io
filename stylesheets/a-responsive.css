@@ -86,6 +86,10 @@
   .product-card.large-text {
     height: 550px;
   }
+
+  .product-card.medium-text {
+    height: 500px;
+  }
 }
 
 /*IPHONE 6*/
