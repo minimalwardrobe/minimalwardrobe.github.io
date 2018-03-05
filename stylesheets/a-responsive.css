@@ -10,14 +10,14 @@
   .light-green-container {
     width: 600px;
     left: 110px;
-    height: 800px;
+    height: 630px;
     top: 190px;
   }
 
   .dark-green-container {
     width: 600px;
     left: 50px;
-    height: 835px;
+    height: 670px;
     top: 230px;
   }
 }
@@ -57,7 +57,7 @@
 
   .intro-text {
     left: 40px;
-    top: 110px;
+    top: 80px;
     line-height: 1.5;
   }
 
@@ -99,7 +99,7 @@
 /*IPHONE 6*/
 @media only screen and (max-width: 375px) {
   .intro-text {
-    top: 145px;
+    top: 120px;
     font-size: 40px;
     left: 25px;
   }
@@ -144,7 +144,7 @@
 /*IPHONE 5*/
 @media only screen and (max-width: 320px) {
   .intro-text {
-    top: 110px;
+    top: 90px;
     font-size: 35px;
     left: 25px;
     line-height: 1.5;
@@ -169,7 +169,7 @@
   .dark-green-container {
     width: 250px;
     left: 22px;
-    height: 1200px;
+    height: 955px;
     top: 100px;
   }
 }
