@@ -1,6 +1,6 @@
 .dark-green-container {
     width: 800px;
-    height: 620px;
+    height: 780px;
     background-color: #134074;
     position: absolute;
     left: 200px;
@@ -39,7 +39,7 @@
 
 .light-green-container {
     width: 700px;
-    height: 630px;
+    height: 700px;
     background-color: #CDD6DD;
     position: absolute;
     left: 350px;

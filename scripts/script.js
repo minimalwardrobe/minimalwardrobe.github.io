@@ -15,6 +15,12 @@ function catalogHeaderSelect() {
       }, 'slow');
     } else if (window.location.href == "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/about.html") {
       window.location.href = "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/index.html#catalog"
+    } else if (window.location.href == "http://theminimalwardrobe.com/" || window.location.href == "http://theminimalwardrobe.com/index.html" || window.location.href == "http://theminimalwardrobe.com/index.html#catalog") {
+      $('html, body').animate({
+        scrollTop: $('.more-life-container').offset().top
+      }, 'slow');
+    } else if (window.location.href == "http://theminimalwardrobe.com/about.html") {
+      window.location.href = "http://theminimalwardrobe.com/index.html#catalog"
     }
   })
 }

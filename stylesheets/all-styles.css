@@ -11,6 +11,10 @@ html,body, .header-video {
   filter: brightness(70%);
 }
 
+.about-text-wrapper li {
+  font-family: 'Arimo', sans-serif;
+}
+
 .close-card {
   display: none;
   position: relative;
