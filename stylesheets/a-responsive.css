@@ -90,6 +90,10 @@
   .product-card.medium-text {
     height: 500px;
   }
+
+  .more-life-container {
+    padding-bottom: 50px;
+  }
 }
 
 /*IPHONE 6*/
