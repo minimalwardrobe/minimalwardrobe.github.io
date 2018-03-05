@@ -97,6 +97,10 @@ html,body, .header-video {
   cursor: pointer;
 }
 
+.card-text .price-link:hover {
+  background: #134074;
+}
+
 .price-container {
   height: 30px;
 }
@@ -263,6 +267,10 @@ p {
   font-family: 'Arimo', sans-serif;
   text-decoration: none;
   font-weight: 600;
+}
+
+.minimalist-wardrobe-header a:hover {
+  border-bottom: 1px solid;
 }
 
 .mw-logo {
