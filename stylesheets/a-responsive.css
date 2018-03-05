@@ -37,6 +37,7 @@
     position: absolute;
     top: 10px;
     display: flex;
+    font-weight: 600;
     flex-direction: row;
     justify-content: space-around;
     z-index: 999;
