@@ -2,7 +2,7 @@ $(document).ready(function() {
   onlyAnimateOnWeb()
   fadeOutText()
   closeCard()
-  
+
 
   catalogHeaderSelect()
   typeWriter("Simplify your wardrobe with functional clothing that hopefully won't go out of style.", 0)
@@ -23,12 +23,12 @@ function catalogHeaderSelect() {
       }, 'slow');
     } else if (window.location.href == "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/about.html") {
       window.location.href = "file:///Users/jackburum/one-day-websites/the-minimalist-wardrobe/index.html#catalog"
-    } else if (window.location.href == "http://theminimalwardrobe.com/" || window.location.href == "http://theminimalwardrobe.com/index.html" || window.location.href == "http://theminimalwardrobe.com/index.html#catalog") {
+    } else if (window.location.href == "https://theminimalwardrobe.com/" || window.location.href == "https://theminimalwardrobe.com/index.html" || window.location.href == "https://theminimalwardrobe.com/index.html#catalog") {
       $('html, body').animate({
         scrollTop: $('.more-life-container').offset().top
       }, 'slow');
-    } else if (window.location.href == "http://theminimalwardrobe.com/about.html") {
-      window.location.href = "http://theminimalwardrobe.com/index.html#catalog"
+    } else if (window.location.href == "https://theminimalwardrobe.com/about.html") {
+      window.location.href = "https://theminimalwardrobe.com/index.html#catalog"
     }
   })
 }
