@@ -249,6 +249,7 @@ p {
 }
 
 .intro-text {
+  font-weight: 300;
   position: absolute;
   font-size: 46px;
   left: 75px;
