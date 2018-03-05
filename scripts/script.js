@@ -2,7 +2,7 @@ $(document).ready(function() {
   fadeOutText()
   closeCard()
   catalogHeaderSelect()
-  typeWriter("Simplify your wardrobe with functional clothing that hopefully won't go out of style.", 0)
+  typeWriter("Simplify your wardrobe with functional clothing that hopefully won't go out of style :)", 0)
 })
 
 
