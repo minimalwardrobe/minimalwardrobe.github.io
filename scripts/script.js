@@ -2,7 +2,7 @@ $(document).ready(function() {
   onlyAnimateOnWeb()
 
   catalogHeaderSelect()
-  typeWriter("Create a minimalist wardrobe with functional clothing that hopefully won't go out of style.", 0)
+  typeWriter("Create a minimalist wardrobe with functional clothing that won't go out of style.", 0)
 })
 
 function onlyAnimateOnWeb() {
