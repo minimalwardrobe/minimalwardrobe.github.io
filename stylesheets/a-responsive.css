@@ -99,7 +99,7 @@
 /*IPHONE 6*/
 @media only screen and (max-width: 375px) {
   .intro-text {
-    top: 110px;
+    top: 100px;
     font-size: 40px;
     left: 25px;
   }
@@ -144,7 +144,7 @@
 /*IPHONE 5*/
 @media only screen and (max-width: 320px) {
   .intro-text {
-    top: 80px;
+    top: 70px;
     font-size: 35px;
     left: 25px;
     line-height: 1.5;
